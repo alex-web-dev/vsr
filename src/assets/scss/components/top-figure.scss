@@ -1,0 +1,21 @@
+.top-figure {
+    position: absolute;
+    top: -56px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 93px;
+    background: url('../img/icons/round-figure.svg') center / contain no-repeat;
+
+    &--black {
+        background-image: url('../img/icons/round-figure-black.svg');
+    }
+
+    &--dark {
+        background-image: url('../img/icons/round-figure-dark.svg');
+    }
+
+    &--blue {
+        background-image: url('../img/icons/round-figure-blue.svg');
+    }
+}

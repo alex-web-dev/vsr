@@ -1,0 +1,48 @@
+.form {
+    &__header {
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        &:not(:first-child) {
+            margin-top: 10px;
+        }
+    }
+
+    &__main {
+        width: 100%;
+    }
+
+    &__group {
+        display: flex;
+        width: 100%;
+
+        &:not(:first-child) {
+            margin-top: 20px;
+        }
+    }
+
+    &__group-item {
+        flex: 1 1 100%;
+
+        &:not(:first-child) {
+            margin-left: 10px;
+        }
+    }
+
+    &__item {
+        width: 100%;
+
+        &:not(:first-child) {
+            margin-top: 20px;
+        }
+    }
+
+    &__privacy {
+        margin-top: 20px;
+    }
+
+    &__btn {
+        margin-top: 20px;
+    }
+}

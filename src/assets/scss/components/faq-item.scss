@@ -1,0 +1,52 @@
+.faq-item {
+    padding: 14px 0;
+    border-radius: 20px;
+    border: 1px solid rgba($color-grey, 0.5);
+    transition: background 0.35s, border 0.35s;
+
+    &.accordion--activating,
+    &.accordion--active {
+        background-color: $color-primary;
+        border-color: $color-primary;
+    }
+
+    &.accordion--activating.accordion--active {
+        background-color: transparent;
+        border-color: rgba($color-grey, 0.5);
+    }
+
+    &__btn {
+        padding: 13px 29px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+
+        b {
+            margin-right: 5px;
+            transition: color 0.35s;
+        }
+
+        &.accordion__btn--active {
+            b {
+                color: $color-black;
+            }
+        }
+    }
+
+    &__btn-icon {
+        margin-left: 12px;
+        stroke: $color-primary;
+        transition: stroke 0.35s, transform 0.35s;
+    }
+
+    &__btn.accordion__btn--active &__btn-icon {
+        stroke: $color-white;
+        transform: rotate(-180deg)
+    }
+
+    &__main {
+        padding: 4px 29px 10px;
+    }
+}

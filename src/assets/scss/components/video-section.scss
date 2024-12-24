@@ -1,0 +1,16 @@
+.video-section {
+    position: relative;
+
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: -206px;
+        width: 100%;
+        height: 1024px;
+        background: url('../img/bg.svg') top / 100% no-repeat;
+        background-position: center bottom;
+        opacity: 0.6;
+    }
+}

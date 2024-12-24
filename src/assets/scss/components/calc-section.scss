@@ -1,0 +1,32 @@
+.calc-section {
+    position: relative;
+    padding: 140px 0 134px;
+    background-color: $color-primary;
+    overflow: hidden;
+
+    &__main {
+        position: relative;
+        z-index: 1;
+        margin: 0 auto;
+        max-width: 770px;
+    }
+
+    &__bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1292px;
+        height: calc(100% + 20px);
+        background: url('../img/calc-bg.png') center / cover no-repeat;
+
+        &:before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 793px;
+            background: linear-gradient(90deg, rgba(57, 61, 255, 0) 0%, $color-primary 100%);
+        }
+    }
+}

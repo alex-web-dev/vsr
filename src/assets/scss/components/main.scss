@@ -1,0 +1,37 @@
+.main {
+    padding-bottom: 165px;
+    flex: 1 1 auto;
+    overflow: hidden;
+
+    &__section {
+        margin-top: 155px;
+    }
+
+    &__how-work {
+        padding-top: 120px;
+    }
+
+    &__video-section {
+        margin-top: 180px;
+    }
+
+    &__features {
+        padding-top: 170px;
+    }
+
+    &__clients {
+        padding: 165px 0;
+    }
+
+    &__cases {
+        padding: 155px 0 165px;
+    }
+
+    &__price {
+        padding-top: 170px;
+    }
+
+    &__faq {
+        padding-top: 125px;
+    }
+}

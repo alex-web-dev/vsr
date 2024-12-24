@@ -1,0 +1,16 @@
+.select {
+    &__field {
+        display: none;
+    }
+
+    &__error {
+        margin-top: 5px;
+        display: none;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    &--error &__error {
+        display: block;
+    }
+}

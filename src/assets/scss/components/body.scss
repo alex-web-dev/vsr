@@ -1,0 +1,10 @@
+.body {
+    &--lock {
+        overflow: hidden;
+    }
+
+    &--home {
+        background-color: $color-black;
+        color: $color-white;
+    }
+}

@@ -1,0 +1,84 @@
+.video {
+    position: relative;
+    padding-bottom: 40px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    overflow: hidden;
+
+    &__body {
+        position: relative;
+        padding: 60px 87px 60px 114px;
+        display: flex;
+        align-items: center;
+        min-height: 468px;
+        border-radius: 40px;
+        overflow: hidden;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+            transform: rotate(180deg);
+            width: 86%;
+            height: 100%;
+            background: linear-gradient(270deg, rgba(56, 53, 131, 0.8) 59.87%, rgba(56, 53, 131, 0.52828) 79%, rgba(56, 53, 131, 0) 100%);
+        }
+    }
+
+    &__main {
+        position: relative;
+        z-index: 1;
+        flex: 1 1 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__info {
+        max-width: 690px;
+    }
+
+    &__title {
+        line-height: 1.08;
+    }
+
+    &__play {
+        margin-left: 30px;
+    }
+
+    &__preview {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__figure {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -1;
+        padding-top: 43.42%;
+        width: 100%;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: url("../img/video/figure.svg") bottom / contain no-repeat;
+        }
+    }
+
+    @media (max-width: 1230px) {
+        &__content {
+            padding-bottom: calc(6vw - 35px);
+        }
+    }
+}

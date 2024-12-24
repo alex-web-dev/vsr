@@ -1,0 +1,11 @@
+.faq {
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__item {
+        &:not(:first-child) {
+            margin-top: 10px;
+        }
+    }
+}

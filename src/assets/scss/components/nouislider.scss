@@ -1,0 +1,65 @@
+.noUi-horizontal {
+    height: 6px;
+}
+
+.noUi-target {
+    border: none;
+    background: rgba($color-grey, 0.5);
+    border-radius: 4px;
+    box-shadow: none;
+}
+
+.noUi-horizontal .noUi-handle {
+    top: -5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $color-primary;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.noUi-horizontal .noUi-handle:before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+    display: none;
+}
+
+.noUi-horizontal .noUi-handle:after {
+    display: none;
+}
+
+.noUi-horizontal .noUi-handle-lower {
+    right: -8px;
+}
+
+.noUi-horizontal .noUi-handle-upper {
+    right: 8px;
+}
+
+.noUi-connects {
+    cursor: pointer;
+    border-radius: 4px;
+    
+    &:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 16px;
+    }
+}
+
+.noUi-connect {
+    position: relative;
+    background-color: $color-primary;
+}
