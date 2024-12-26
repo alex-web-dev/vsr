@@ -5,4 +5,22 @@
         justify-content: center;
         height: auto;
     }
+
+    @media (max-width: 767px) {
+        &__slider {
+            margin: 0 -30px;
+            padding: 0 30px;
+        }
+        
+        &__slide {
+            max-height: 62px;
+            width: auto;
+
+            &:nth-child(3) {
+                .company-item__img {
+                    max-height: 40px;
+                }
+            }
+        }
+    }
 }

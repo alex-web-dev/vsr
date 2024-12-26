@@ -2,7 +2,7 @@
     position: relative;
 
     &:before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
@@ -15,12 +15,46 @@
         position: relative;
         z-index: 1;
     }
-    
+
     &__title {
         margin-bottom: 40px;
     }
 
     &__top-figure {
         z-index: -1;
+    }
+
+    @media (max-width: 767px) {
+        &__title {
+            margin: 0 auto 24px;
+            max-width: 360px;
+        }
+
+        &__table {
+            margin-right: -30px;
+            padding-right: 30px;
+
+            .simplebar-track.simplebar-horizontal {
+                max-width: calc(100% - 30px);
+            }
+        }
+    }
+
+    @media (max-width: 479px) {
+        &__title {
+            max-width: 320px;
+        }
+    }
+
+    @media (max-width: 440px) {
+        &__title {
+            max-width: 300px;
+        }
+    }
+
+    @media (max-width: 390px) {
+        &__title {
+            max-width: 270px;
+        }
     }
 }

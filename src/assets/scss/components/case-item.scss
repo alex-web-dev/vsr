@@ -27,7 +27,9 @@
     }
 
     &__footer {
-        margin-top: 56px;
+        margin-top: 40px;
+        padding-top: 16px;
+        padding-bottom: 16px;
         padding-right: 210px;
         display: inline-block;
     }
@@ -45,5 +47,19 @@
         width: 240px;
         height: 320px;
         object-fit: cover;
+    }
+
+    @media (max-width: 991px) {
+        &__img-box {
+            display: none;
+        }
+
+        &__feature {
+            width: calc(100% - 30px);
+        }
+
+        &__footer {
+            padding-right: 0;
+        }
     }
 }

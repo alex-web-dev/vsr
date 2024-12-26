@@ -8,3 +8,4 @@ import './range-field.js';
 import './cases.js';
 import './popup.js';
 import './video.js';
+import './simplebar.js';

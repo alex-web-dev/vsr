@@ -16,7 +16,7 @@ if ($cases) {
         speed: 500,
         loop: true,
         autoplay: {
-            delay: 5000,
+            delay: 500022,
             disableOnInteraction: false,
         },
         on: {

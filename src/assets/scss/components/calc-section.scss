@@ -17,16 +17,28 @@
         top: 0;
         width: 1292px;
         height: calc(100% + 20px);
-        background: url('../img/calc-bg.png') center / cover no-repeat;
+        background: url("../img/calc-bg.png") center / cover no-repeat;
 
         &:before {
-            content: '';
+            content: "";
             position: absolute;
             right: 0;
             top: 0;
             height: 100%;
             width: 793px;
             background: linear-gradient(90deg, rgba(57, 61, 255, 0) 0%, $color-primary 100%);
+        }
+    }
+
+    @media (max-width: 991px) {
+        padding: 100px 0;
+        
+
+        &__bg {
+            width: 793px;
+            left: unset;
+            right: 0;
+            background-position: 78%;
         }
     }
 }

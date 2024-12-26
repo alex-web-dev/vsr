@@ -25,4 +25,10 @@
     &__controls-prev {
         margin-right: 10px;
     }
+
+    @media (max-width: 991px) {
+        &__controls {
+            position: static;
+        }
+    }
 }

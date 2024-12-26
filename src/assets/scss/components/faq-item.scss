@@ -37,6 +37,7 @@
 
     &__btn-icon {
         margin-left: 12px;
+        flex: 0 0 auto;
         stroke: $color-primary;
         transition: stroke 0.35s, transform 0.35s;
     }

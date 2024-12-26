@@ -57,6 +57,10 @@
         line-height: 1.35;
     }
 
+    &--lh-12 {
+        line-height: 1.2;
+    }
+
     &--primary {
         color: $color-primary;
     }
@@ -132,6 +136,16 @@
             &:not(:first-child) {
                 margin-top: 16px;
             }
+        }
+    }
+
+    @media (max-width: 440px) {
+        &--2xl {
+            font-size: 20px;
+        }
+
+        &--lg {
+            font-size: 16px;
         }
     }
 }

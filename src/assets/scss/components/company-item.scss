@@ -5,4 +5,8 @@
     &:hover {
         opacity: 1;
     }
+
+    &__img {
+        max-height: min(70px, 100%);
+    }
 }

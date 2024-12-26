@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="format-detection" content="telephone=no">
+        <meta name="description" content="VSR">
         <link rel="shortcut icon" href="assets/img/favicon.png">
         <title>VSR</title>
     </head>
@@ -12,7 +13,7 @@
         <header class="header">
             <div class="container">
                 <div class="header__content">
-                    <a href="#" class="logo header__logo">
+                    <a href="#" class="logo header__logo" aria-label="Logo">
                         <img class="logo__img" src="assets/img/logo.svg" alt="">
                     </a>
                     <div class="header__btns">
@@ -30,8 +31,8 @@
             <section class="banner">
                 <div class="container">
                     <div class="banner__content">
-                        <p class="text text--2xl banner__subtitle">Виртуальный шоурум для застройщиков и их клиентов:</p>
-                        <h1 class="title title--1 title--semibold banner__title">Демонстрируйте ваши проекты онлайн без ограничений!</h1>
+                        <p class="text text--2xl text--lh-12 banner__subtitle">Виртуальный шоурум для застройщиков и их клиентов:</p>
+                        <h1 class="title title--1 title--semibold banner__title">Демонстрируйте ваши проекты онлайн без&nbsp;ограничений!</h1>
                         <p class="text text--lg text--grey banner__text">
                             Никаких скачиваний или сложностей.
                             <br>
@@ -47,16 +48,16 @@
                 <div class="container">
                     <div class="companies__slider swiper">
                         <div class="swiper-wrapper">
-                            <a class="company-item swiper-slide companies__slide" href="#">
+                            <a class="company-item swiper-slide companies__slide" href="#" aria-label="Fplus">
                                 <img class="company-item__img" src="assets/img/companies/1.png" alt="">
                             </a>
-                            <a class="company-item swiper-slide companies__slide" href="#">
+                            <a class="company-item swiper-slide companies__slide" href="#" aria-label="Евраз">
                                 <img class="company-item__img" src="assets/img/companies/2.png" alt="">
                             </a>
-                            <a class="company-item swiper-slide companies__slide" href="#">
+                            <a class="company-item swiper-slide companies__slide" href="#" aria-label="t2">
                                 <img class="company-item__img" src="assets/img/companies/3.png" alt="">
                             </a>
-                            <a class="company-item swiper-slide companies__slide" href="#">
+                            <a class="company-item swiper-slide companies__slide" href="#" aria-label="Ростелеком">
                                 <img class="company-item__img" src="assets/img/companies/4.png" alt="">
                             </a>
                         </div>
@@ -69,7 +70,7 @@
                     <div class="steps__content">
                         <div class="steps__header steps__header--mb-lg">
                             <h2 class="title title--2 title--center steps__title">Как это работает?</h2>
-                            <p class="text text--2xl text--grey text--center steps__text">
+                            <p class="text text--2xl text--grey text--center text--lh-12 steps__text">
                                 Технология, которая делает 3D-презентации доступными
                             </p>
                         </div>
@@ -119,11 +120,12 @@
                                         ПК.
                                     </h2>
                                 </div>
-                                <button class="btn-play video__play js-open-popup" data-popup-name="video">
+                                <button class="btn-play video__play js-open-popup" data-popup-name="video" aria-label="Play video">
                                     <img src="assets/img/icons/play-white.svg" alt="">
                                 </button>
                             </div>
-                            <img class="video__preview" src="assets/img/video/preview.jpg" alt="">
+                            <img class="video__preview video__preview--desktop" src="assets/img/video/preview.jpg" aria-label="Previous" alt="">
+                            <img class="video__preview video__preview--mobile" src="assets/img/video/preview-mobile.jpg" aria-label="Next" alt="">
                         </div>
                         <div class="video__figure"></div>
                     </div>
@@ -302,25 +304,25 @@
                                         <div class="title title--4 title--black calc-total__value">65 000 000 руб.</div>
                                     </div>
                                 </div>
-                                <div class="text text--3xl text--black text--center calc__subtitle">после подключения Virtual Showroom</div>
+                                <div class="text text--3xl text--black text--center calc__subtitle calc__subtitle--mobile-sm">после подключения VSR</div>
                                 <div class="calc__group calc__group--mt-lg">
                                     <div class="calc-total calc__group-item">
-                                        <div class="text text--black calc-total__label">Конверсия в покупку</div>
+                                        <div class="text text--black calc-total__label">Конверсия в покупку с VSR</div>
                                         <div class="title title--4 title--primary calc-total__value">11.5%</div>
                                     </div>
                                     <div class="calc-total calc__group-item calc__group-item--lg">
-                                        <div class="text text--primary calc-total__label">Потенциальный доход</div>
+                                        <div class="text text--primary calc-total__label">Потенциальный доход с VSR</div>
                                         <div class="title title--4 title--primary calc-total__value">74 750 000 руб.</div>
                                     </div>
                                 </div>
-                                <div class="calc-total calc-total--green calc__item calc__item--mt-lg">
+                                <div class="calc-total calc-total--px-xs calc-total--green calc__item calc__item--mt-lg">
                                     <div class="text text--black text--center calc-total__label">дополнительный доход</div>
                                     <div class="title title--4 title--green title--center calc-total__value">+9 750 000 руб. в месяц!</div>
                                 </div>
                                 <div class="text text--3xl text--black text--center calc__subtitle">
                                     Готовы увеличить доход с каждого своего проекта?
                                 </div>
-                                <button class="btn btn--full calc__submit">Увеличить ROI своего проекта</button>
+                                <button class="btn btn--full btn--px-xs calc__submit">Увеличить ROI своего проекта</button>
                             </div>
                         </div>
                     </div>
@@ -333,7 +335,7 @@
                 <div class="container">
                     <div class="features__content">
                         <h2 class="title title--2 title--center features__title">Почему именно мы?</h2>
-                        <div class="table-features features__table">
+                        <div class="table-features features__table js-simplebar">
                             <table class="table-features__main">
                                 <thead>
                                     <tr>
@@ -389,8 +391,14 @@
                         <h2 class="title title--2 title--center clients__title">Что говорят наши клиенты</h2>
                         <div class="clients__list">
                             <div class="client-item clients__item">
-                                <div class="client-item__img-box">
-                                    <img class="client-item__img" src="assets/img/clients/1.jpg" alt="">
+                                <div class="client-item__meta">
+                                    <div class="client-item__img-box">
+                                        <img class="client-item__img" src="assets/img/clients/1.jpg" alt="">
+                                    </div>
+                                    <div class="client-item__meta-info">
+                                        <p class="text text--2xl text--bold client-item__meta-author">Александр Ковалев,</p>
+                                        <div class="text text--lg text--grey client-item__meta-position">директор по продажам "СтройГрад"</div>
+                                    </div>
                                 </div>
                                 <p class="text text--lg text--lh-145 client-item__text">
                                     “Мы долго искали решение для демонстрации наших жилых комплексов клиентам из других городов. Virtual
@@ -400,8 +408,14 @@
                                 <div class="text text--lg text--grey client-item__position">директор по продажам "СтройГрад"</div>
                             </div>
                             <div class="client-item clients__item">
-                                <div class="client-item__img-box">
-                                    <img class="client-item__img" src="assets/img/clients/2.jpg" alt="">
+                                <div class="client-item__meta">
+                                    <div class="client-item__img-box">
+                                        <img class="client-item__img" src="assets/img/clients/2.jpg" alt="">
+                                    </div>
+                                    <div class="client-item__meta-info">
+                                        <p class="text text--2xl text--bold client-item__meta-author">Елена Маркова,</p>
+                                        <div class="text text--lg text--grey client-item__meta-position">руководитель маркетинга, "Новострой+"</div>
+                                    </div>
                                 </div>
                                 <p class="text text--lg text--lh-145 client-item__text">
                                     “Наши клиенты часто жаловались на сложность загрузки и установки наших приложений для Windows. С этим
@@ -412,8 +426,14 @@
                                 <div class="text text--lg text--grey client-item__position">руководитель маркетинга, "Новострой+"</div>
                             </div>
                             <div class="client-item clients__item">
-                                <div class="client-item__img-box">
-                                    <img class="client-item__img" src="assets/img/clients/3.jpg" alt="">
+                                <div class="client-item__meta">
+                                    <div class="client-item__img-box">
+                                        <img class="client-item__img" src="assets/img/clients/3.jpg" alt="">
+                                    </div>
+                                    <div class="client-item__meta-info">
+                                        <p class="text text--2xl text--bold client-item__meta-author">Дмитрий Савченко,</p>
+                                        <div class="text text--lg text--grey client-item__meta-position">генеральный директор, "ПремиумСтрой"</div>
+                                    </div>
                                 </div>
                                 <p class="text text--lg text--lh-145 client-item__text">
                                     “Это решение идеально для демонстрации элитных объектов. Потенциальные клиенты могут исследовать
@@ -764,7 +784,7 @@
                 <div class="container">
                     <div class="price__content">
                         <h2 class="title title--2 title--center price__title">Сколько это стоит?</h2>
-                        <h3 class="title title--3 title--center title--semibold price__title2">От 49 000 рублей в месяц</h3>
+                        <h3 class="title title--3 title--center title--semibold title--lh-125 price__title2">От 49 000 рублей в месяц</h3>
                         <p class="text text--2xl text--center price__title3">Включает в себя:</p>
                         <div class="price__list">
                             <div class="price-item price__item">
@@ -804,7 +824,7 @@
                         <h2 class="title title--2 title--center faq__title">Часто-задаваемые вопросы</h2>
                         <div class="faq__list">
                             <div class="faq-item accordion faq__item">
-                                <button class="title title--5 accordion__btn faq-item__btn">
+                                <button class="title title--5 title--lh-125 accordion__btn faq-item__btn">
                                     <span>
                                         <b>1.</b>
                                         Какой тип 3D-визуализации поддерживает ваша платформа?
@@ -831,7 +851,7 @@
                                 </div>
                             </div>
                             <div class="faq-item accordion faq__item">
-                                <button class="title title--5 accordion__btn faq-item__btn">
+                                <button class="title title--5 title--lh-125 accordion__btn faq-item__btn">
                                     <span>
                                         <b>2.</b>
                                         Сколько клиентов могут одновременно использовать систему?
@@ -858,7 +878,7 @@
                                 </div>
                             </div>
                             <div class="faq-item accordion faq__item">
-                                <button class="title title--5 accordion__btn faq-item__btn">
+                                <button class="title title--5 title--lh-125 accordion__btn faq-item__btn">
                                     <span>
                                         <b>3.</b>
                                         Требуется ли от девелопера дополнительная настройка?
@@ -885,7 +905,7 @@
                                 </div>
                             </div>
                             <div class="faq-item accordion faq__item">
-                                <button class="title title--5 accordion__btn faq-item__btn">
+                                <button class="title title--5 title--lh-125 accordion__btn faq-item__btn">
                                     <span>
                                         <b>4.</b>
                                         Какие требования к серверу?
@@ -912,7 +932,7 @@
                                 </div>
                             </div>
                             <div class="faq-item accordion faq__item">
-                                <button class="title title--5 accordion__btn faq-item__btn">
+                                <button class="title title--5 title--lh-125 accordion__btn faq-item__btn">
                                     <span>
                                         <b>5.</b>
                                         Как осуществляется безопасность данных?
@@ -939,7 +959,7 @@
                                 </div>
                             </div>
                             <div class="faq-item accordion faq__item">
-                                <button class="title title--5 accordion__btn faq-item__btn">
+                                <button class="title title--5 title--lh-125 accordion__btn faq-item__btn">
                                     <span>
                                         <b>6.</b>
                                         Какие устройства поддерживаются?
@@ -966,7 +986,7 @@
                                 </div>
                             </div>
                             <div class="faq-item accordion faq__item">
-                                <button class="title title--5 accordion__btn faq-item__btn">
+                                <button class="title title--5 title--lh-125 accordion__btn faq-item__btn">
                                     <span>
                                         <b>7.</b>
                                         Сколько времени занимает запуск проекта?
@@ -993,7 +1013,7 @@
                                 </div>
                             </div>
                             <div class="faq-item accordion faq__item">
-                                <button class="title title--5 accordion__btn faq-item__btn">
+                                <button class="title title--5 title--lh-125 accordion__btn faq-item__btn">
                                     <span>
                                         <b>8.</b>
                                         Сколько стоит это?
@@ -1020,7 +1040,7 @@
                                 </div>
                             </div>
                             <div class="faq-item accordion faq__item">
-                                <button class="title title--5 accordion__btn faq-item__btn">
+                                <button class="title title--5 title--lh-125 accordion__btn faq-item__btn">
                                     <span>
                                         <b>9.</b>
                                         Возможна ли интеграция с CRM или другими системами?
@@ -1047,7 +1067,7 @@
                                 </div>
                             </div>
                             <div class="faq-item accordion faq__item">
-                                <button class="title title--5 accordion__btn faq-item__btn">
+                                <button class="title title--5 title--lh-125 accordion__btn faq-item__btn">
                                     <span>
                                         <b>10.</b>
                                         Что делать, если у клиента плохой интернет?
@@ -1086,7 +1106,7 @@
                             Хотите узнать, как VirtualShowroom может преобразить ваш бизнес? Запишитесь на бесплатную демо-презентацию,
                             чтобы испытать наше решение в действии!
                         </p>
-                        <a class="btn sign-up__btn">Записаться на демо</a>
+                        <a class="btn sign-up__btn" href="#">Записаться на демо</a>
                     </div>
                 </div>
             </section>
@@ -1096,7 +1116,7 @@
             <div class="footer__top">
                 <div class="container">
                     <div class="footer__top-content">
-                        <a href="#" class="logo footer__logo">
+                        <a href="#" class="logo footer__logo" aria-label="Logo">
                             <img class="logo__img" src="assets/img/logo-grey.svg" alt="">
                         </a>
                         <div class="footer__contacts">
@@ -1111,13 +1131,13 @@
                         </div>
                         <div class="footer__social">
                             <div class="footer__social-list">
-                                <a href="#" class="icon footer__social-item">
+                                <a href="#" class="icon footer__social-item" aria-label="Telegram">
                                     <img class="icon__img" src="assets/img/icons/social/telegram-white.svg" alt="">
                                 </a>
-                                <a href="#" class="icon footer__social-item">
+                                <a href="#" class="icon footer__social-item" aria-label="VK">
                                     <img class="icon__img" src="assets/img/icons/social/vk-white.svg" alt="">
                                 </a>
-                                <a href="#" class="icon footer__social-item">
+                                <a href="#" class="icon footer__social-item" aria-label="Facebook">
                                     <img class="icon__img" src="assets/img/icons/social/facebook-white.svg" alt="">
                                 </a>
                             </div>

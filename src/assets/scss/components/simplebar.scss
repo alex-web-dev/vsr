@@ -1,0 +1,37 @@
+div.simplebar-scrollbar:before {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: transparent;
+}
+
+div.simplebar-scrollbar.simplebar-visible {
+    background-color: $color-grey;
+    border-radius: 2px;
+}
+
+div.simplebar-scrollbar.simplebar-visible:before {
+    opacity: 1;
+}
+
+div.simplebar-content-wrapper {
+    outline: none;
+}
+
+.simplebar-scrollbar:before {
+    border-radius: 0;
+}
+
+div.simplebar-track {
+    background-color: rgba($color-grey, 0.3);
+    border-radius: 2px;
+}
+
+div.simplebar-track.simplebar-vertical {
+    width: 4px;
+}
+
+div.simplebar-track.simplebar-horizontal {
+    height: 4px;
+}

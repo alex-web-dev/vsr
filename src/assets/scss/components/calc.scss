@@ -52,4 +52,51 @@
     &__submit {
         margin-top: 20px;
     }
+
+    @media (max-width: 767px) {
+        &__group {
+            flex-direction: column;
+
+            &--mt-lg {
+                &:not(:first-child) {
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        &__group-item {
+            &:not(:first-child) {
+                margin-top: 10px;
+            }
+        }
+
+        &__group--mt-lg &__group-item {
+            &:not(:first-child) {
+                margin-top: 20px;
+            }
+        }
+
+        &__subtitle {
+            &--mobile-sm {
+                font-size: 18px;
+
+                &:not(:first-child) {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 440px) {
+        padding: 30px;
+
+        &__subtitle {
+            max-width: 330px;
+            font-size: 20px;
+
+            &--mobile-sm {
+                font-size: 18px;
+            }
+        }
+    }
 }

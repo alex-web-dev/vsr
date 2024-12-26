@@ -2,4 +2,12 @@
     max-width: calc($container-width + $container-offset * 2);
     margin: 0 auto;
     padding: 0 $container-offset;
+
+    @media (max-width: 440px) {
+        padding: 0 20px;
+    }
+
+    @media (max-width: 390px) {
+        padding: 0 15px;
+    }
 }

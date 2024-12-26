@@ -25,9 +25,10 @@ $popups.forEach(($popup) => {
     const $backdrop = $popup.querySelector(".popup__backdrop");
     $backdrop?.addEventListener("click", () => closePopup($popup));
 
+    const $body = $popup.querySelector(".popup__body");
     const $dialog = $popup.querySelector(".popup__dialog");
-    $dialog?.addEventListener("click", (e) => {
-        if (e.target === $dialog) {
+    $body?.addEventListener("click", (e) => {
+        if (e.target === $body || e.target === $dialog) {
             closePopup($popup);
         }
     });

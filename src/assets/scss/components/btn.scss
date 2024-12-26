@@ -128,4 +128,13 @@
     &--regular {
         font-weight: 400;
     }
+
+    @media (max-width: 390px) {
+        padding: 16px 40px;
+
+        &--px-xs {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+    }
 }

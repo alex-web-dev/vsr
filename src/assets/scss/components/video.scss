@@ -1,6 +1,6 @@
 .video {
     position: relative;
-    padding-bottom: 40px;
+    padding-bottom: calc(6% + -30px);
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     overflow: hidden;
@@ -46,6 +46,7 @@
 
     &__play {
         margin-left: 30px;
+        flex: 0 0 auto;
     }
 
     &__preview {
@@ -55,6 +56,10 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+
+        &--mobile {
+            display: none;
+        }
     }
 
     &__figure {
@@ -79,6 +84,99 @@
     @media (max-width: 1230px) {
         &__content {
             padding-bottom: calc(6vw - 35px);
+        }
+
+        &__body {
+            padding: 40px 60px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        padding-bottom: calc(15% - 35px);
+
+        &__body {
+            padding: 34px 40px 110px;
+
+            &:before {
+                width: 100%;
+                height: calc(100% - 148px);
+                background: linear-gradient(0deg, rgba(56, 53, 131, 0.8) 59.87%, rgba(56, 53, 131, 0.52828) 79%, rgba(56, 53, 131, 0) 100%);
+            }
+        }
+
+        &__main {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__title {
+            font-size: 42px;
+        }
+
+        &__play {
+            margin-top: 80px;
+            margin-left: 0;
+            align-self: center;
+        }
+
+        &__preview {
+            &--desktop {
+                display: none;
+            }
+
+            &--mobile {
+                display: block;
+            }
+        }
+
+        &__figure {
+            padding-top: 0;
+            height: 100%;
+
+            &:before {
+                background-image: url("../img/video/figure-mobile.svg");
+                background-size: 100%;
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        &__title {
+            font-size: 32px;
+        }
+    }
+
+    @media (max-width: 560px) {
+        padding-bottom: calc(15% - 25px);
+
+        &__title {
+            max-width: 340px;
+        }
+    }
+
+    @media (max-width: 479px) {
+        &__title {
+            max-width: 320px;
+            font-size: 30px;
+        }
+    }
+
+    @media (max-width: 440px) {
+        &__body {
+            padding-left: 35px;
+            padding-right: 35px;
+        }
+
+        &__title {
+            max-width: 300px;
+            font-size: 28px;
+        }
+    }
+
+    @media (max-width: 390px) {
+        &__title {
+            max-width: 275px;
+            font-size: 26px;
         }
     }
 }

@@ -1,6 +1,8 @@
 .table-features {
+    padding-bottom: 30px;
+
     &__main {
-        width: 100%;
+        width: $container-width;
         border-spacing: 0;
     }
     
